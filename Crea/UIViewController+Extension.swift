@@ -4,18 +4,18 @@ import SystemConfiguration
 
 public extension UIViewController {
     
-    public func showAlert(title: String, message: String? = nil, style: UIAlertControllerStyle = .alert) {
-        
-        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        
-        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-        
-        DispatchQueue.main.async {
-            self.present(alert, animated: true, completion: nil)
-        }
-        
-    }
-    
+//    public func showAlert(title: String, message: String? = nil, style: UIAlertControllerStyle = .alert) {
+//        
+//        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+//        
+//        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+//        
+//        DispatchQueue.main.async {
+//            self.present(alert, animated: true, completion: nil)
+//        }
+//        
+//    }
+//    
     
     public static func isNetworkAvailable(host_name: String) -> Bool {
         

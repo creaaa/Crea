@@ -1,8 +1,9 @@
 version: "Apple Swift version 3.1 (swiftlang-802.0.53 clang-802.0.42)"
 options: "4398187dad75e583d00536433a842eda"
-build_time: [555142188, 346690000]
+build_time: [555146662, 864246000]
 inputs:
   "/Users/masa/Desktop/Crea/Crea/TypeSafeUtil.swift": [555142170, 0]
-  "/Users/masa/Desktop/Crea/Crea/NavTabBarCustom.swift": [555141244, 0]
-  "/Users/masa/Desktop/Crea/Crea/UIViewController+Extension.swift": [555141244, 0]
-  "/Users/masa/Desktop/Crea/Crea/Date+Extension.swift": [555138307, 0]
+  "/Users/masa/Desktop/Crea/Crea/NavTabBarCustom.swift": [555145912, 0]
+  "/Users/masa/Desktop/Crea/Crea/ModernExt.swift": [555146621, 0]
+  "/Users/masa/Desktop/Crea/Crea/UIViewController+Extension.swift": [555146531, 0]
+  "/Users/masa/Desktop/Crea/Crea/Date+Extension.swift": [555146531, 0]

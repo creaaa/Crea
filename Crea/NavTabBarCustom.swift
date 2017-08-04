@@ -48,6 +48,10 @@ open class BarBtnItem {
               NSForegroundColorAttributeName: color
             ],
             for: .normal)
+        
+        let date = Date()
+        
+        
     }
     
 }
