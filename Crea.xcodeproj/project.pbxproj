@@ -38,7 +38,7 @@
 		445B59E91F34349D0049E3D5 /* NavTabBarCustom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavTabBarCustom.swift; sourceTree = "<group>"; };
 		445B59EB1F3437420049E3D5 /* Date+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 		445B59ED1F343AC30049E3D5 /* TypeSafeUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypeSafeUtil.swift; sourceTree = "<group>"; };
-		44F95AA61F3449FB00F432B5 /* readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = readme.md; sourceTree = "<group>"; };
+		44F95AA61F3449FB00F432B5 /* readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = readme.md; path = ../readme.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
