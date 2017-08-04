@@ -149,7 +149,10 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 
 
 @interface UIViewController (SWIFT_EXTENSION(Crea))
-- (void)showAlertWithTitle:(NSString * _Nonnull)title message:(NSString * _Nullable)message style:(UIAlertControllerStyle)style;
+@end
+
+
+@interface UIViewController (SWIFT_EXTENSION(Crea))
 + (BOOL)isNetworkAvailableWithHost_name:(NSString * _Nonnull)host_name SWIFT_WARN_UNUSED_RESULT;
 - (void)pushViewController:(UIViewController * _Nonnull)viewController animated:(BOOL)animated completion:(void (^ _Nullable)(void))completion;
 - (void)popViewControllerWithAnimated:(BOOL)animated completion:(void (^ _Nullable)(void))completion;
