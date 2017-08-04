@@ -3,6 +3,7 @@ import UIKit
 
 /* Nib */
 
+// make the class "final", otherwise error happens
 public protocol InstantiatableFromNib {
     static var  nibName: String { get }
     static func instantiateFromNib() -> Self
@@ -23,6 +24,7 @@ public extension InstantiatableFromNib where Self: UIView {
 
 /* StoryBoard */
 
+// make the class "final", otherwise error happens
 public extension NSObjectProtocol {
     
     // static内のselfは、クラス自身 = つまりメタタイプそのものを表す
@@ -37,6 +39,7 @@ public extension NSObjectProtocol {
     
 }
 
+// make the class "final", otherwise error happens
 public protocol Storyboardable: NSObjectProtocol {
     static var  storyboardName: String { get }
     static func instantiate() -> Self
@@ -61,15 +64,11 @@ public protocol Nibable: NSObjectProtocol {
 }
 
 public extension Nibable {
-    
     public static var nibName: String { return className }
-    
     public static var nib: UINib {
         return UINib(nibName: nibName, bundle: Bundle(for: self))
     }
-    
 }
-
 
 public extension UITableViewCell {
     static var identifier: String { return className }
@@ -87,7 +86,6 @@ public extension UITableView {
     
     public func dequeueReusableCell<T: UITableViewCell>
         (with cellType: T.Type, for indexPath: IndexPath) -> T {
-        
         return dequeueReusableCell(withIdentifier: T.identifier, for: indexPath) as! T
     }
     

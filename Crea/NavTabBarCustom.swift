@@ -6,7 +6,7 @@ open class NavBar {
     */
     
     // nav bar title setting
-    public static func navBarTitle(color: UIColor, fontName: String, size: CGFloat) {
+    public static func navBarTitle(color: UIColor, fontName: String = "Helvetica", size: CGFloat = 12) {
         UINavigationBar.appearance().titleTextAttributes =
             [NSForegroundColorAttributeName: color,
              NSFontAttributeName: UIFont(name: fontName, size: size) as Any
@@ -18,12 +18,10 @@ open class NavBar {
         UINavigationBar.appearance().barTintColor = color
     }
     
-    
 }
 
 
 open class TabBar {
-    
     
     // you can't tab bar's color here; write each VC
     // self.tabBarController?.tabBar.barTintColor = .black
@@ -38,14 +36,13 @@ open class TabBar {
         UITabBar.appearance().unselectedItemTintColor = color
     }
     
-    
 }
 
 
 open class BarBtnItem {
     
     // nav & tab bar's button setting
-    public static func navbarBtn(color: UIColor, fontName: String, size: CGFloat) {
+    public static func barBtn(color: UIColor, fontName: String = "Helvetica", size: CGFloat = 12) {
         UIBarButtonItem.appearance().setTitleTextAttributes(
             [ NSFontAttributeName: UIFont(name: fontName, size: size) as Any,
               NSForegroundColorAttributeName: color
