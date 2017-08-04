@@ -24,6 +24,7 @@
 /* Begin PBXBuildFile section */
 		4459D4D01F34287C00C4456F /* Crea.h in Headers */ = {isa = PBXBuildFile; fileRef = 4459D4CE1F34287C00C4456F /* Crea.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4459D4D71F34288F00C4456F /* FirstClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4459D4D61F34288F00C4456F /* FirstClass.swift */; };
+		4459D4EE1F342FE100C4456F /* SecondClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4459D4ED1F342FE100C4456F /* SecondClass.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		4459D4CE1F34287C00C4456F /* Crea.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Crea.h; sourceTree = "<group>"; };
 		4459D4CF1F34287C00C4456F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4459D4D61F34288F00C4456F /* FirstClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstClass.swift; sourceTree = "<group>"; };
+		4459D4ED1F342FE100C4456F /* SecondClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondClass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				4459D4CE1F34287C00C4456F /* Crea.h */,
 				4459D4CF1F34287C00C4456F /* Info.plist */,
 				4459D4D61F34288F00C4456F /* FirstClass.swift */,
+				4459D4ED1F342FE100C4456F /* SecondClass.swift */,
 			);
 			path = Crea;
 			sourceTree = "<group>";
@@ -184,6 +187,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4459D4EE1F342FE100C4456F /* SecondClass.swift in Sources */,
 				4459D4D71F34288F00C4456F /* FirstClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -368,6 +372,7 @@
 				4459D4D51F34287C00C4456F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4459D4D91F3429C800C4456F /* Build configuration list for PBXAggregateTarget "CreaFatBinary" */ = {
 			isa = XCConfigurationList;
@@ -376,6 +381,7 @@
 				4459D4DB1F3429C800C4456F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
