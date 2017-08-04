@@ -14,3 +14,6 @@
 ```
 github "creaaa/Crea"
 ```
+
+That's it!
+Hope you like it, stay tuned!
