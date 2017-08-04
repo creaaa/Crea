@@ -132,8 +132,27 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 # define SWIFT_DEPRECATED_MSG(...) __attribute__((deprecated(__VA_ARGS__)))
 #endif
 #if defined(__has_feature) && __has_feature(modules)
+@import UIKit;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
 #pragma clang diagnostic ignored "-Wduplicate-method-arg"
+
+@interface UITableView (SWIFT_EXTENSION(Crea))
+@end
+
+
+@interface UITableViewCell (SWIFT_EXTENSION(Crea))
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull identifier;)
++ (NSString * _Nonnull)identifier SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
+@interface UIViewController (SWIFT_EXTENSION(Crea))
+- (void)showAlertWithTitle:(NSString * _Nonnull)title message:(NSString * _Nullable)message style:(UIAlertControllerStyle)style;
++ (BOOL)isNetworkAvailableWithHost_name:(NSString * _Nonnull)host_name SWIFT_WARN_UNUSED_RESULT;
+- (void)pushViewController:(UIViewController * _Nonnull)viewController animated:(BOOL)animated completion:(void (^ _Nonnull)(void))completion;
+- (void)popViewControllerWithAnimated:(BOOL)animated completion:(void (^ _Nonnull)(void))completion;
+@end
+
 #pragma clang diagnostic pop

@@ -1,10 +1,3 @@
-//
-//  Crea.h
-//  Crea
-//
-//  Created by mas.t on 2017/08/03.
-//  Copyright © 2017年 masa. All rights reserved.
-//
 
 #import <UIKit/UIKit.h>
 
