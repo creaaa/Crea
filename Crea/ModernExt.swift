@@ -3,7 +3,7 @@ import UIKit
 
 public protocol CreaCompatible {
     associatedtype CompatibleType
-    var cr: CompatibleType { get }
+    var crea: CompatibleType { get }
 }
 
 public final class Example<Base> {
@@ -14,7 +14,7 @@ public final class Example<Base> {
 }
 
 public extension CreaCompatible {
-    public var cr: Example<Self> {
+    public var crea: Example<Self> {
         return Example(self)
     }
 }
