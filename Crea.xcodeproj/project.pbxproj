@@ -28,6 +28,7 @@
 		445B59EC1F3437420049E3D5 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445B59EB1F3437420049E3D5 /* Date+Extension.swift */; };
 		445B59EE1F343AC30049E3D5 /* TypeSafeUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445B59ED1F343AC30049E3D5 /* TypeSafeUtil.swift */; };
 		44F95AA71F3449FB00F432B5 /* readme.md in Sources */ = {isa = PBXBuildFile; fileRef = 44F95AA61F3449FB00F432B5 /* readme.md */; };
+		44F95AA91F344CE700F432B5 /* ModernExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F95AA81F344CE700F432B5 /* ModernExt.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		445B59EB1F3437420049E3D5 /* Date+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 		445B59ED1F343AC30049E3D5 /* TypeSafeUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypeSafeUtil.swift; sourceTree = "<group>"; };
 		44F95AA61F3449FB00F432B5 /* readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = readme.md; path = ../readme.md; sourceTree = "<group>"; };
+		44F95AA81F344CE700F432B5 /* ModernExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModernExt.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 				445B59E71F3434100049E3D5 /* UIViewController+Extension.swift */,
 				445B59EB1F3437420049E3D5 /* Date+Extension.swift */,
 				44F95AA61F3449FB00F432B5 /* readme.md */,
+				44F95AA81F344CE700F432B5 /* ModernExt.swift */,
 			);
 			path = Crea;
 			sourceTree = "<group>";
@@ -198,6 +201,7 @@
 			files = (
 				445B59EE1F343AC30049E3D5 /* TypeSafeUtil.swift in Sources */,
 				445B59EA1F34349D0049E3D5 /* NavTabBarCustom.swift in Sources */,
+				44F95AA91F344CE700F432B5 /* ModernExt.swift in Sources */,
 				445B59E81F3434100049E3D5 /* UIViewController+Extension.swift in Sources */,
 				44F95AA71F3449FB00F432B5 /* readme.md in Sources */,
 				445B59EC1F3437420049E3D5 /* Date+Extension.swift in Sources */,
