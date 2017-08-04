@@ -1,0 +1,41 @@
+BCSymbolMap Version: 2.0
+_swift_rt_swift_getExistentialTypeMetadata
+_swift_rt_swift_allocObject
+_swift_rt_swift_getInitializedObjCClass
+_swift_rt_swift_slowAlloc
+_swift_rt_swift_slowDealloc
+__TMLGCs23_ContiguousArrayStorageP__
+__TMLP_
+__TMfC4Crea10FirstClass
+__TMRfC4Crea10FirstClass
+__swift_FORCE_LOAD_$_swiftUIKit_$_Crea
+__swift_FORCE_LOAD_$_swiftCoreImage_$_Crea
+__swift_FORCE_LOAD_$_swiftDarwin_$_Crea
+__swift_FORCE_LOAD_$_swiftCoreGraphics_$_Crea
+__swift_FORCE_LOAD_$_swiftDispatch_$_Crea
+__swift_FORCE_LOAD_$_swiftObjectiveC_$_Crea
+__swift_FORCE_LOAD_$_swiftFoundation_$_Crea
+__swift_FORCE_LOAD_$_swiftQuartzCore_$_Crea
+___swift_reflection_version
+_objc_classes
+Apple LLVM version 8.1.0 (clang-802.0.42)
+-emit-bc /Users/masa/Desktop/Crea/Crea/FirstClass.swift -target arm64-apple-ios10.3 -Xllvm -aarch64-use-tbi -enable-objc-interop -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk -I /Users/masa/Library/Developer/Xcode/DerivedData/Crea-favrqeejkrqvpqgbgnrzvteuquji/Build/Products/Release-iphoneos -F /Users/masa/Library/Developer/Xcode/DerivedData/Crea-favrqeejkrqvpqgbgnrzvteuquji/Build/Products/Release-iphoneos -g -import-underlying-module -module-cache-path /Users/masa/Library/Developer/Xcode/DerivedData/ModuleCache -serialize-debugging-options -Xcc -I/Users/masa/Library/Developer/Xcode/DerivedData/Crea-favrqeejkrqvpqgbgnrzvteuquji/Build/Intermediates/Crea.build/Release-iphoneos/Crea.build/swift-overrides.hmap -Xcc -iquote -Xcc /Users/masa/Library/Developer/Xcode/DerivedData/Crea-favrqeejkrqvpqgbgnrzvteuquji/Build/Intermediates/Crea.build/Release-iphoneos/Crea.build/Crea-generated-files.hmap -Xcc -I/Users/masa/Library/Developer/Xcode/DerivedData/Crea-favrqeejkrqvpqgbgnrzvteuquji/Build/Intermediates/Crea.build/Release-iphoneos/Crea.build/Crea-own-target-headers.hmap -Xcc -I/Users/masa/Library/Developer/Xcode/DerivedData/Crea-favrqeejkrqvpqgbgnrzvteuquji/Build/Intermediates/Crea.build/Release-iphoneos/Crea.build/Crea-all-non-framework-target-headers.hmap -Xcc -ivfsoverlay -Xcc /Users/masa/Library/Developer/Xcode/DerivedData/Crea-favrqeejkrqvpqgbgnrzvteuquji/Build/Intermediates/Crea.build/all-product-headers.yaml -Xcc -iquote -Xcc /Users/masa/Library/Developer/Xcode/DerivedData/Crea-favrqeejkrqvpqgbgnrzvteuquji/Build/Intermediates/Crea.build/Release-iphoneos/Crea.build/Crea-project-headers.hmap -Xcc -I/Users/masa/Library/Developer/Xcode/DerivedData/Crea-favrqeejkrqvpqgbgnrzvteuquji/Build/Products/Release-iphoneos/include -Xcc -I/Users/masa/Library/Developer/Xcode/DerivedData/Crea-favrqeejkrqvpqgbgnrzvteuquji/Build/Intermediates/Crea.build/Release-iphoneos/Crea.build/DerivedSources/arm64 -Xcc -I/Users/masa/Library/Developer/Xcode/DerivedData/Crea-favrqeejkrqvpqgbgnrzvteuquji/Build/Intermediates/Crea.build/Release-iphoneos/Crea.build/DerivedSources -Xcc -ivfsoverlay -Xcc /Users/masa/Library/Developer/Xcode/DerivedData/Crea-favrqeejkrqvpqgbgnrzvteuquji/Build/Intermediates/Crea.build/Release-iphoneos/Crea.build/unextended-module-overlay.yaml -Xcc -working-directory/Users/masa/Desktop/Crea -emit-module-doc-path /Users/masa/Library/Developer/Xcode/DerivedData/Crea-favrqeejkrqvpqgbgnrzvteuquji/Build/Intermediates/Crea.build/Release-iphoneos/Crea.build/Objects-normal/arm64/Crea.swiftdoc -serialize-diagnostics-path /Users/masa/Library/Developer/Xcode/DerivedData/Crea-favrqeejkrqvpqgbgnrzvteuquji/Build/Intermediates/Crea.build/Release-iphoneos/Crea.build/Objects-normal/arm64/FirstClass.dia -O -parse-as-library -module-name Crea -emit-module-path /Users/masa/Library/Developer/Xcode/DerivedData/Crea-favrqeejkrqvpqgbgnrzvteuquji/Build/Intermediates/Crea.build/Release-iphoneos/Crea.build/Objects-normal/arm64/Crea.swiftmodule -emit-objc-header-path /Users/masa/Library/Developer/Xcode/DerivedData/Crea-favrqeejkrqvpqgbgnrzvteuquji/Build/Intermediates/Crea.build/Release-iphoneos/Crea.build/Objects-normal/arm64/Crea-Swift.h -emit-dependencies-path /Users/masa/Library/Developer/Xcode/DerivedData/Crea-favrqeejkrqvpqgbgnrzvteuquji/Build/Intermediates/Crea.build/Release-iphoneos/Crea.build/Objects-normal/arm64/FirstClass.d -num-threads 2 -o /Users/masa/Library/Developer/Xcode/DerivedData/Crea-favrqeejkrqvpqgbgnrzvteuquji/Build/Intermediates/Crea.build/Release-iphoneos/Crea.build/Objects-normal/arm64/FirstClass.bc -resource-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift
+<swift-imported-modules>
+/Users/masa/Desktop/Crea
+Apple Swift version 3.1 (swiftlang-802.0.53 clang-802.0.42)
+/Users/masa/Desktop/Crea/Crea/FirstClass.swift
+get_field_types_FirstClass
+FirstClass.swift
+/Users/masa/Desktop/Crea/Crea
+deinit
+_TMaC4Crea10FirstClass
+init
+hoge
+_TTSg5P____TFs27_allocateUninitializedArrayurFBwTGSax_Bp_
+_TTSg5P____TZFSa13_adoptStoragefTGCs23_ContiguousArrayStoragex_5countSi_TGSax_GSpx__
+_TTSg5P____TFVs22_ContiguousArrayBufferg19firstElementAddressGSpx_
+_TTSg5P____TFVs22_ContiguousArrayBufferCfT5countSi7storageGCs23_ContiguousArrayStoragex__GS_x_
+_TTSg5P____TFVs22_ContiguousArrayBuffer18_initStorageHeaderfT5countSi8capacitySi_T_
+_TMaGCs23_ContiguousArrayStorageP__
+_TMaP_
+/Users/masa/Library/Developer/Xcode/DerivedData/Crea-favrqeejkrqvpqgbgnrzvteuquji/Build/Intermediates/Crea.build/Release-iphoneos/Crea.build/DerivedSources/Crea_vers.c

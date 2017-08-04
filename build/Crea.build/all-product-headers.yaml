@@ -1,0 +1,33 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [
+    {
+      'type': 'directory',
+      'name': "/Users/masa/Library/Developer/Xcode/DerivedData/Crea-favrqeejkrqvpqgbgnrzvteuquji/Build/Products/Debug-iphonesimulator/Crea.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "Crea-Swift.h",
+          'external-contents': "/Users/masa/Library/Developer/Xcode/DerivedData/Crea-favrqeejkrqvpqgbgnrzvteuquji/Build/Products/Debug-iphonesimulator/Crea.framework/Headers/Crea-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "Crea.h",
+          'external-contents': "/Users/masa/Desktop/Crea/Crea/Crea.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/masa/Library/Developer/Xcode/DerivedData/Crea-favrqeejkrqvpqgbgnrzvteuquji/Build/Products/Debug-iphonesimulator/Crea.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/masa/Desktop/Crea/build/Crea.build/Debug-iphonesimulator/Crea.build/module.modulemap"
+        }
+      ]
+    }
+  ]
+}

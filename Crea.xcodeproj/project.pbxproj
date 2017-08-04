@@ -6,14 +6,31 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		4459D4D81F3429C800C4456F /* CreaFatBinary */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 4459D4D91F3429C800C4456F /* Build configuration list for PBXAggregateTarget "CreaFatBinary" */;
+			buildPhases = (
+				4459D4DC1F3429F500C4456F /* ShellScript */,
+				4459D4DD1F342A8600C4456F /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = CreaFatBinary;
+			productName = CreaFatBinary;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		4459D4D01F34287C00C4456F /* Crea.h in Headers */ = {isa = PBXBuildFile; fileRef = 4459D4CE1F34287C00C4456F /* Crea.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4459D4D71F34288F00C4456F /* FirstClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4459D4D61F34288F00C4456F /* FirstClass.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4459D4CB1F34287C00C4456F /* Crea.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Crea.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4459D4CE1F34287C00C4456F /* Crea.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Crea.h; sourceTree = "<group>"; };
 		4459D4CF1F34287C00C4456F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4459D4D61F34288F00C4456F /* FirstClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstClass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +65,7 @@
 			children = (
 				4459D4CE1F34287C00C4456F /* Crea.h */,
 				4459D4CF1F34287C00C4456F /* Info.plist */,
+				4459D4D61F34288F00C4456F /* FirstClass.swift */,
 			);
 			path = Crea;
 			sourceTree = "<group>";
@@ -95,6 +113,11 @@
 				TargetAttributes = {
 					4459D4CA1F34287B00C4456F = {
 						CreatedOnToolsVersion = 8.3.3;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+					};
+					4459D4D81F3429C800C4456F = {
+						CreatedOnToolsVersion = 8.3.3;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -112,6 +135,7 @@
 			projectRoot = "";
 			targets = (
 				4459D4CA1F34287B00C4456F /* Crea */,
+				4459D4D81F3429C800C4456F /* CreaFatBinary */,
 			);
 		};
 /* End PBXProject section */
@@ -126,11 +150,41 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4459D4DC1F3429F500C4456F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#!/bin/sh\n\nUNIVERSAL_OUTPUTFOLDER=${BUILD_DIR}/${CONFIGURATION}-universal\n\n# make sure the output directory exists\nmkdir -p \"${UNIVERSAL_OUTPUTFOLDER}\"\n\n# Step 1. Build Device and Simulator versions\nxcodebuild -target \"${PROJECT_NAME}\" ONLY_ACTIVE_ARCH=NO -configuration ${CONFIGURATION} -sdk iphoneos  BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" clean build\nxcodebuild -target \"${PROJECT_NAME}\" -configuration ${CONFIGURATION} -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" clean build\n\n# Step 2. Copy the framework structure (from iphoneos build) to the universal folder\ncp -R \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/${PROJECT_NAME}.framework\" \"${UNIVERSAL_OUTPUTFOLDER}/\"\n\n# Step 3. Copy Swift modules from iphonesimulator build (if it exists) to the copied framework directory\nSIMULATOR_SWIFT_MODULES_DIR=\"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/${PROJECT_NAME}.framework/Modules/${PROJECT_NAME}.swiftmodule/.\"\nif [ -d \"${SIMULATOR_SWIFT_MODULES_DIR}\" ]; then\ncp -R \"${SIMULATOR_SWIFT_MODULES_DIR}\" \"${UNIVERSAL_OUTPUTFOLDER}/${PROJECT_NAME}.framework/Modules/${PROJECT_NAME}.swiftmodule\"\nfi\n\n# Step 4. Create universal binary file using lipo and place the combined executable in the copied framework directory\nlipo -create -output \"${UNIVERSAL_OUTPUTFOLDER}/${PROJECT_NAME}.framework/${PROJECT_NAME}\" \"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/${PROJECT_NAME}.framework/${PROJECT_NAME}\" \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/${PROJECT_NAME}.framework/${PROJECT_NAME}\"\n\n# Step 5. Convenience step to copy the framework to the project's directory\ncp -R \"${UNIVERSAL_OUTPUTFOLDER}/${PROJECT_NAME}.framework\" \"${PROJECT_DIR}\"\n\n# Step 6. Convenience step to open the project's directory in Finder\nopen \"${PROJECT_DIR}\"";
+		};
+		4459D4DD1F342A8600C4456F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#!/bin/sh\nlipo -info \"${PROJECT_DIR}/${PROJECT_NAME}.framework/${PROJECT_NAME}\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4459D4C61F34287B00C4456F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4459D4D71F34288F00C4456F /* FirstClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,6 +295,7 @@
 		4459D4D41F34287C00C4456F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -249,16 +304,20 @@
 				INFOPLIST_FILE = Crea/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = co.masa.Crea;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
+				VALID_ARCHS = "arm64 armv7 armv7s x86_64 i386";
 			};
 			name = Debug;
 		};
 		4459D4D51F34287C00C4456F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -267,10 +326,26 @@
 				INFOPLIST_FILE = Crea/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = co.masa.Crea;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
+				VALID_ARCHS = "arm64 armv7 armv7s x86_64 i386";
+			};
+			name = Release;
+		};
+		4459D4DA1F3429C800C4456F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		4459D4DB1F3429C800C4456F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
@@ -291,6 +366,14 @@
 			buildConfigurations = (
 				4459D4D41F34287C00C4456F /* Debug */,
 				4459D4D51F34287C00C4456F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		4459D4D91F3429C800C4456F /* Build configuration list for PBXAggregateTarget "CreaFatBinary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4459D4DA1F3429C800C4456F /* Debug */,
+				4459D4DB1F3429C800C4456F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

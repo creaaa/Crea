@@ -1,0 +1,5 @@
+version: "Apple Swift version 3.1 (swiftlang-802.0.53 clang-802.0.42)"
+options: "5ea6d92ce451bd087f779663aa460dd3"
+build_time: [555135617, 419523000]
+inputs:
+  "/Users/masa/Desktop/Crea/Crea/FirstClass.swift": [555135376, 0]

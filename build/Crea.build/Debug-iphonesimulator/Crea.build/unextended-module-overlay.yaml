@@ -1,0 +1,13 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [{
+    'type': 'directory',
+    'name': '/Users/masa/Library/Developer/Xcode/DerivedData/Crea-favrqeejkrqvpqgbgnrzvteuquji/Build/Products/Debug-iphonesimulator/Crea.framework/Modules'
+    'contents': [{
+      'type': 'file',
+      'name': 'module.modulemap',
+      'external-contents': '/Users/masa/Desktop/Crea/build/Crea.build/Debug-iphonesimulator/Crea.build/unextended-module.modulemap',
+    }]
+  }]
+}

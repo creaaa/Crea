@@ -1,0 +1,10 @@
+framework module Crea {
+  umbrella header "Crea.h"
+
+  export *
+  module * { export * }
+}
+
+module Crea.Swift {
+    header "Crea-Swift.h"
+}
