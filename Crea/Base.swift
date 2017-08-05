@@ -7,7 +7,7 @@ public protocol CreaCompatible {
     static var crea: CompatibleType.Type { get }
 }
 
-public final class Example<Base> {
+public final class Primordium<Base> {
     let base: Base
     public init(_ base: Base) {
         self.base = base
@@ -16,18 +16,25 @@ public final class Example<Base> {
 
 public extension CreaCompatible {
 
-    public var crea: Example<Self> {
-        return Example(self)
+    public var crea: Primordium<Self> {
+        return Primordium(self)
     }
+    
     public static var crea: CompatibleType.Type {
         return CompatibleType.self
     }
     
 }
 
+
+extension NSObject: CreaCompatible { }
+
+
+
+/*
 extension UIViewController: CreaCompatible { }
 
-extension Example where Base == UIViewController {
+extension Primordium where Base == UIViewController {
     
     public func showAlert(title: String, message: String? = nil, style: UIAlertControllerStyle = .alert) {
         
@@ -42,24 +49,25 @@ extension Example where Base == UIViewController {
     }
     
 }
+*/
 
 ///////
 
-extension Date: CreaCompatible {}
-
-extension Example where Base == Date {
-    
-    public static func dateFromString(string: String, format: String) -> Date {
-        let formatter = DateFormatter()
-        formatter.dateFormat = format
-        return formatter.date(from: string)!
-    }
-    
-    public static func stringFromDate(date: Date, format: String) -> String {
-        let formatter = DateFormatter()
-        formatter.dateFormat = format
-        return formatter.string(from: date)
-    }
-    
-}
+//extension Date: CreaCompatible {}
+//
+//extension Primordium where Base == Date {
+//    
+//    public static func dateFromString(string: String, format: String) -> Date {
+//        let formatter = DateFormatter()
+//        formatter.dateFormat = format
+//        return formatter.date(from: string)!
+//    }
+//    
+//    public static func stringFromDate(date: Date, format: String) -> String {
+//        let formatter = DateFormatter()
+//        formatter.dateFormat = format
+//        return formatter.string(from: date)
+//    }
+//    
+//}
 
