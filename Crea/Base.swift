@@ -14,6 +14,16 @@ public final class Primordium<Base> {
     }
 }
 
+////////////////////////////
+
+// Array拡張用
+public struct PrimordiumWithAssociatedType<Base, AssociatedType> {
+    let base: Base
+}
+
+/////////////////////////////
+
+
 public extension CreaCompatible {
 
     public var crea: Primordium<Self> {
