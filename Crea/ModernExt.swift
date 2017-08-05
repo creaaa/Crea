@@ -2,9 +2,9 @@
 import UIKit
 
 public protocol CreaCompatible {
-    associatedtype CompatibleType
-    var crea: CompatibleType { get }
-    static var metacrea: CompatibleType.Type { get }
+    associatedtype   CompatibleType
+           var crea: CompatibleType      { get }
+    static var crea: CompatibleType.Type { get }
 }
 
 public final class Example<Base> {
@@ -19,7 +19,7 @@ public extension CreaCompatible {
     public var crea: Example<Self> {
         return Example(self)
     }
-    public static var metacrea: CompatibleType.Type {
+    public static var crea: CompatibleType.Type {
         return CompatibleType.self
     }
     
@@ -41,8 +41,13 @@ extension Example where Base == UIViewController {
         
     }
     
-    
-    // how to do same thing in static??
+}
+
+///////
+
+extension Date: CreaCompatible {}
+
+extension Example where Base == Date {
     
     public static func dateFromString(string: String, format: String) -> Date {
         let formatter = DateFormatter()
@@ -57,3 +62,4 @@ extension Example where Base == UIViewController {
     }
     
 }
+

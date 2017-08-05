@@ -1,6 +1,6 @@
 
 public extension Date {
-    
+  
     public static func dateFromString(string: String, format: String) -> Date {
         let formatter = DateFormatter()
         formatter.dateFormat = format
