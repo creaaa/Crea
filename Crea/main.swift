@@ -7,6 +7,9 @@ c.crea.popViewController(animated: false)
 UIBarButtonItem.crea.barBtn(color: .brown, size: 16)
 */
 
-
+/*
 let f = [1,2,3,4,5].crea.random
 print(f)
+*/
+
+Array<Int>.crea.hogeperofuga()
