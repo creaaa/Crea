@@ -19,6 +19,9 @@ extension Primordium where Base: UIViewController {
     
     public static func isNetworkAvailable(host_name: String) -> Bool {
         
+        // FIXME: throw error rather than return false
+        guard host_name != "" else { return false }
+        
         let reachability = SCNetworkReachabilityCreateWithName(nil, host_name)!
         var flags        = SCNetworkReachabilityFlags.connectionAutomatic
         if !SCNetworkReachabilityGetFlags(reachability, &flags) {

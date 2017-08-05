@@ -24,7 +24,7 @@ public extension InstantiatableFromNib where Self: UIView {
 
 /* StoryBoard */
 
-// make the class "final", otherwise error happens
+// make the class "final", otherwise compile error happens
 public extension NSObjectProtocol {
     
     // static内のselfは、クラス自身 = つまりメタタイプそのものを表す
@@ -39,7 +39,7 @@ public extension NSObjectProtocol {
     
 }
 
-// make the class "final", otherwise error happens
+// make the class "final", otherwise compile error happens
 public protocol Storyboardable: NSObjectProtocol {
     static var  storyboardName: String { get }
     static func instantiate() -> Self
@@ -49,6 +49,8 @@ public extension Storyboardable where Self: UIViewController {
     
     public static var storyboardName: String { return className }
     
+    // depending on the following condition:
+    // "VC is defined inside Storyboard that file name matches 'VC's class name'"
     public static func instantiate() -> Self {
         return UIStoryboard(name: storyboardName, bundle: Bundle(for: self))
             .instantiateInitialViewController() as! Self
@@ -76,14 +78,17 @@ public extension UITableViewCell {
 
 public extension UITableView {
     
+    // depending on the following condition: "Cell ID matches 'ClassName'"
     public func register<T: UITableViewCell>(_ cellType: T.Type) {
         register(T.self, forCellReuseIdentifier: T.identifier)
     }
     
+    // depending on the following condition: "Cell ID matches 'ClassName'"
     public func register<T: UITableViewCell>(nibCell: T.Type) where T: Nibable {
         register(T.nib, forCellReuseIdentifier: T.identifier)
     }
     
+    // depending on the following condition: "Cell ID matches 'ClassName'"
     public func dequeueReusableCell<T: UITableViewCell>
         (with cellType: T.Type, for indexPath: IndexPath) -> T {
         return dequeueReusableCell(withIdentifier: T.identifier, for: indexPath) as! T
