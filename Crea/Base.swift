@@ -20,12 +20,11 @@ public extension CreaCompatible {
         return Primordium(self)
     }
     
-    public static var crea: CompatibleType.Type {
-        return CompatibleType.self
+    public static var crea: Primordium<Self>.Type {
+        return Primordium<Self>.self
     }
     
 }
-
 
 extension NSObject: CreaCompatible { }
 

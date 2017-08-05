@@ -8,3 +8,9 @@
 //UITabBar.crea.tabBarColorSelected(color: .blue)
 //UITabBar.crea.tabBarColorUnselected(color: .green)
 
+let c = UIViewController()
+c.crea.showAlert(title: "")
+c.crea.pushViewController(c, animated: true)
+c.crea.popViewController(animated: false)
+
+UIViewController.crea.isNetworkAvailable(host_name: "")
