@@ -12,8 +12,8 @@
 Like [RxSwift](https://github.com/ReactiveX/RxSwift "RxSwift") and [KingFisher](https://github.com/onevcat/Kingfisher "KingFisher"), all instance & class method is invoked through a property 'crea'.
 
 ```
-let randomNo = [1,2,3,4,5].crea.random
-UIViewController.crea.isNetworkAvailable(host_name: "https://www.google.co.jp/")
+let randomNo = [1,2,3,4,5].**crea**.random
+UIViewController.**crea**.isNetworkAvailable(host_name: "https://www.google.co.jp/")
 ```
 
 As a result, we can distinguish easily between a function come from this library or not. 
