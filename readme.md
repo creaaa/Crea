@@ -7,7 +7,9 @@
 
 🏃 Own library that supports my crazy iOS dev life 🏃
 
-Like [RxSwift](https://github.com/ReactiveX/RxSwift "RxSwift") and [KingFisher](https://github.com/onevcat/Kingfisher "KingFisher"), All instance & class method is invoked through a property 'crea'.
+## Characteristics
+
+Like [RxSwift](https://github.com/ReactiveX/RxSwift "RxSwift") and [KingFisher](https://github.com/onevcat/Kingfisher "KingFisher"), all instance & class method is invoked through a property 'crea'.
 
 ```
 let randomNo = [1,2,3,4,5].crea.random
