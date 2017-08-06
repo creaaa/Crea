@@ -7,14 +7,14 @@
 
 🏃 Own library that supports my crazy iOS dev life 🏃
 
-Like [RxSwift](https://github.com/ReactiveX/RxSwift "RxSwift") and [KingFisher](https://github.com/onevcat/Kingfisher "KingFisher"), All instance & class method is invoked through property 'crea'.
+Like [RxSwift](https://github.com/ReactiveX/RxSwift "RxSwift") and [KingFisher](https://github.com/onevcat/Kingfisher "KingFisher"), All instance & class method is invoked through a property 'crea'.
 
 ```
-let f = [1,2,3,4,5].crea.random
+let randomNo = [1,2,3,4,5].crea.random
 UIViewController.crea.isNetworkAvailable(host_name: "https://www.google.co.jp/")
 ```
 
-As a result, we can distinguish easily that a function comes from this library. 
+As a result, we can distinguish easily between a function come from this library or not. 
 
 
 ## Usage
