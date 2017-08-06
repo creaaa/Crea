@@ -51,13 +51,32 @@ Hope you like it, stay tuned!
 
 Name | Signature
 ---- | ---------
-**`showAlert`**|`showAlert (title: String, message: String? = default, style: UIAlertControllerStyle = default)`
+**`showAlert`**|`showAlert (title: String, message: String? = nil, style: UIAlertControllerStyle = .alert)`
+**`pushViewController`**|`pushViewController (viewController: UIViewController, animated: Bool, completion: (() -> Void)? = nil) `
+**`popViewController`**|`popViewController (animated: Bool,
+completion: (() -> Void)? = nil)`
 
 #### Class Methods ####
 
 Name | Signatures
 ---- | ----------
-**`pushViewController`**|`pushViewController (viewController: UIViewController, animated: Bool, completion: (() -> Void)? = default) `
+**`isNetworkAvailable`**|`isNetworkAvailable (host_name: String) -> Bool `
+
+## UINavigationController ##
+
+#### Class Methods ####
+
+Name | Signatures
+---- | ----------
+**`navBarTitle`**|`navBarTitle (color: UIColor, fontName: String = "Helvetica", size: CGFloat = 12) `
+
+
+
+
+
+
+
+
 
 <!--
 #### Operators ####
