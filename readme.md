@@ -57,8 +57,9 @@ Name | Signature
 
 Name | Signatures
 ---- | ----------
-**`range`**|`range <U: ForwardIndex> (range: Range<U>) -> Array<U>`
+**`pushViewController`**|`pushViewController (viewController: UIViewController, animated: Bool, completion: (() -> Void)? = default) `
 
+<!--
 #### Operators ####
 Name | Signature | Function
 ---- | --------- | --------
@@ -70,3 +71,4 @@ Name | Signature | Function
 `* String`|`* (array: String[], separator: String) -> String`|Equivalent to `array.implode(String)`
 `[rangeAsArray: x..y]`<br>`[rangeAsArray: x...y]`|`subscript(#rangeAsArray: Range<Int>) -> Array`|Returns the sub-array from index *x* to index *y*
 `[x, y, ...]`|`subscript(first: Int, second: Int, rest: Int...) -> Array`|Returns the items at *x*, *y*
+-->
