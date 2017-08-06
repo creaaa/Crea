@@ -105,6 +105,16 @@ Name | Signature
 ---- | ---------
 **`kern`**|`kern (kerningValue: CGFloat)`
 
+# Foundation #
+
+## Array ##
+
+#### Properties ####
+
+Name |
+---- |
+**` AssociatedType? random`**
+
 
 
 
