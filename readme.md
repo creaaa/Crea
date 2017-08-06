@@ -53,8 +53,7 @@ Name | Signature
 ---- | ---------
 **`showAlert`**|`showAlert (title: String, message: String? = nil, style: UIAlertControllerStyle = .alert)`
 **`pushViewController`**|`pushViewController (viewController: UIViewController, animated: Bool, completion: (() -> Void)? = nil) `
-**`popViewController`**|`popViewController (animated: Bool,
-completion: (() -> Void)? = nil)`
+**`popViewController`**|`popViewController (animated: Bool, completion: (() -> Void)? = nil)`
 
 #### Class Methods ####
 
@@ -69,12 +68,26 @@ Name | Signatures
 Name | Signatures
 ---- | ----------
 **`navBarTitle`**|`navBarTitle (color: UIColor, fontName: String = "Helvetica", size: CGFloat = 12) `
+**`navBarColor`**|`navBarColor (color: UIColor) `
 
 
+## UITabBar ##
 
+#### Class Methods ####
 
+Name | Signatures
+---- | ----------
+**`tabBarColorSelected`**|`tabBarColorSelected (color: UIColor)`
+**`tabBarColorUnselected`**|`tabBarColorUnselected (color: UIColor)`
+**`tabBarItem`**|`tabBarItem (color: UIColor, fontName: String = "Helvetica", size: CGFloat = 12) `
 
+## UIBarButtonItem ##
 
+#### Class Methods ####
+
+Name | Signatures
+---- | ----------
+**`barBtn`**|`barBtn  (color: UIColor, fontName: String = "Helvetica", size: CGFloat = 12) `
 
 
 
