@@ -29,7 +29,7 @@ Hope you like it, stay tuned!
         - [Class Methods](#class-methods-1)
     - [UITabBar](#uitabbar)
         - [Class Methods](#class-methods-2)
-    - [UIBarButtonItem](#uitabButtonitem)
+    - [UIBarButtonItem](#uibarbuttonitem)
         - [Class Methods](#class-methods-3)
     - [UIImage](#uiimage)
         - [Instance Methods](#instance-methods-1)
