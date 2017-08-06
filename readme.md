@@ -29,7 +29,7 @@ Hope you like it, stay tuned!
         - [Class Methods](#class-methods-1)
     - [UITabBar](#uitabbar)
         - [Class Methods](#class-methods-2)
-    - [UIBarButtonItem](#uitarButtonitem)
+    - [UIBarButtonItem](#uitabButtonitem)
         - [Class Methods](#class-methods-3)
     - [UIImage](#uiimage)
         - [Instance Methods](#instance-methods-4)
@@ -88,6 +88,24 @@ Name | Signatures
 Name | Signatures
 ---- | ----------
 **`barBtn`**|`barBtn  (color: UIColor, fontName: String = "Helvetica", size: CGFloat = 12) `
+
+## UIImage ##
+
+#### Instance Methods ####
+
+Name | Signature
+---- | ---------
+**`resizeUIImage`**|`resizeUIImage (width: CGFloat, height: CGFloat) -> UIImage! `
+
+## UILabel ##
+
+#### Instance Methods ####
+
+Name | Signature
+---- | ---------
+**`kern`**|`kern (kerningValue: CGFloat)`
+
+
 
 
 
