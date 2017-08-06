@@ -37,10 +37,10 @@ Hope you like it, stay tuned!
         - [Instance Methods](#instance-methods-2)
 
 - [Foundation](#foundation)
-    - [Date](#date)
-        - [Class Methods](#class-methods-6)
     - [Array](#array)
-        - [Instance Methods](#instance-methods-6)
+        - [Instance Methods](#instance-methods-3)
+    - [Date](#date)
+        - [Class Methods](#class-methods-4)
 
 
 # UIKit #
@@ -115,9 +115,14 @@ Name |
 ---- |
 **` AssociatedType? random`**
 
+## Date ##
 
+#### Class Methods ####
 
-
+Name | Signatures
+---- | ----------
+**`dateFromString`**|`dateFromString) (string: String, format: String = "yyyy-MM-dd") -> Date `
+**`stringFromDate`**|`stringFromDate) (date: Date, format: String = "yyyy-MM-dd") -> String `
 
 <!--
 #### Operators ####
