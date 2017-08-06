@@ -51,6 +51,18 @@ extension Primordium where Base: UITabBar {
     public static func tabBarColorUnselected(color: UIColor) {
         UITabBar.appearance().unselectedItemTintColor = color
     }
+    
+    // tab bar's text
+    // ↓の barBtnと干渉しないか？確かめろ
+    public static func tabBarItem(color: UIColor, fontName: String = "Helvetica", size: CGFloat = 12) {
+    
+        UITabBarItem.appearance().setTitleTextAttributes(
+        [ NSFontAttributeName: UIFont(name: fontName, size: size) as Any,
+          NSForegroundColorAttributeName: color
+        ]
+        , for: .normal)
+        
+    }
 
 }
 

@@ -10,7 +10,6 @@ extension Array: CreaCompatible {
         return PrimordiumWithAssociatedType.self
     }
     
-    
 }
 
 extension PrimordiumWithAssociatedType where Base == Array<AssociatedType> {
