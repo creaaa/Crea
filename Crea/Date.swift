@@ -47,7 +47,7 @@ extension Primordium where Base == Date {
     }
     */
     
-    // initのかわりに、static method にしました
+    // initのかわりに、method にしました
     public static func date(from string: String, format: String = "yyyy-MM-dd") -> Date? {
         formatter.dateFormat = format
         return formatter.date(from: string) ?? nil
@@ -65,9 +65,9 @@ extension Primordium where Base == Date {
     */
     
     // Date → String
-    public func string(format: String = "yyyy-MM-dd") -> String {
+    public static func string(date: Date, format: String = "yyyy-MM-dd") -> String {
         formatter.dateFormat = format
-        return formatter.string(from: self.base)
+        return formatter.string(from: date)
     }
     
     

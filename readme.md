@@ -1,5 +1,5 @@
 
-# Crea (ver 0.0.12)
+# Crea (ver 0.0.13)
 
 [![Platform](http://img.shields.io/badge/platform-ios-blue.svg?style=flat)](https://developer.apple.com/iphone/index.action)
 [![Language](http://img.shields.io/badge/language-swift-brightgreen.svg?style=flat)](https://developer.apple.com/swift)
@@ -144,7 +144,7 @@ Name |
 Name | Signatures
 ---- | ----------
 **`date`**|`date (from string: String, format: String = "yyyy-MM-dd") -> Date? `
-**`string`**|`string (format: String = "yyyy-MM-dd") -> String `
+**`string`**|`string (date: Date, format: String = "yyyy-MM-dd") -> String `
 
 <!--
 #### Operators ####
