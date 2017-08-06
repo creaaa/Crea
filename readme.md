@@ -38,7 +38,7 @@ Hope you like it, stay tuned!
 
 - [Foundation](#foundation)
     - [Array](#array)
-        - [Instance Methods](#instance-methods-3)
+        - [Properties](#properties)
     - [Date](#date)
         - [Class Methods](#class-methods-4)
 
