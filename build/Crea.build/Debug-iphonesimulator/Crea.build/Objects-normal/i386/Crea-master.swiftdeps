@@ -1,6 +1,6 @@
 version: "Apple Swift version 3.1 (swiftlang-802.0.53 clang-802.0.42)"
 options: "dc7365f568ed8da42a55f76b98f8f5f9"
-build_time: [555370015, 525350000]
+build_time: [555372235, 364478000]
 inputs:
   "/Users/masa/Documents/Xcode Project(1\u8ECD)/Crea/Crea/UILabel.swift": [555280368, 0]
   "/Users/masa/Documents/Xcode Project(1\u8ECD)/Crea/Crea/TypeSafeUtil.swift": [555228916, 0]
@@ -11,4 +11,4 @@ inputs:
   "/Users/masa/Documents/Xcode Project(1\u8ECD)/Crea/Crea/UIViewController.swift": [555224674, 0]
   "/Users/masa/Documents/Xcode Project(1\u8ECD)/Crea/Crea/Array.swift": [555277264, 0]
   "/Users/masa/Documents/Xcode Project(1\u8ECD)/Crea/Crea/UIImage.swift": [555280103, 0]
-  "/Users/masa/Documents/Xcode Project(1\u8ECD)/Crea/Crea/Date.swift": [555369507, 0]
+  "/Users/masa/Documents/Xcode Project(1\u8ECD)/Crea/Crea/Date.swift": [555371543, 0]

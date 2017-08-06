@@ -1,5 +1,5 @@
 
-# Crea (ver 0.0.11)
+# Crea (ver 0.0.12)
 
 [![Platform](http://img.shields.io/badge/platform-ios-blue.svg?style=flat)](https://developer.apple.com/iphone/index.action)
 [![Language](http://img.shields.io/badge/language-swift-brightgreen.svg?style=flat)](https://developer.apple.com/swift)
@@ -34,6 +34,8 @@ Hope you like it, stay tuned!
 ## Contents ##
 
 - [UIKit](#uikit)
+    - [UIView](#uiview)
+        - [Instance Methods](#instance-methods)
     - [UIViewController](#uiviewcontroller)
         - [Instance Methods](#instance-methods)
         - [Class Methods](#class-methods)
@@ -56,6 +58,14 @@ Hope you like it, stay tuned!
 
 
 # UIKit #
+
+## UIView ##
+
+#### Instance Methods ####
+
+Name | Signature
+---- | ---------
+**`addConstraints`**|`addConstraints (for childView: UIView, insets: UIEdgeInsets = .zero)`
 
 ## UIViewController ##
 
@@ -133,8 +143,8 @@ Name |
 
 Name | Signatures
 ---- | ----------
-**`dateFromString`**|`dateFromString (string: String, format: String = "yyyy-MM-dd") -> Date `
-**`stringFromDate`**|`stringFromDate (date: Date, format: String = "yyyy-MM-dd") -> String `
+**`date`**|`date (from string: String, format: String = "yyyy-MM-dd") -> Date? `
+**`string`**|`string (format: String = "yyyy-MM-dd") -> String `
 
 <!--
 #### Operators ####
