@@ -32,9 +32,9 @@ Hope you like it, stay tuned!
     - [UIBarButtonItem](#uitabButtonitem)
         - [Class Methods](#class-methods-3)
     - [UIImage](#uiimage)
-        - [Instance Methods](#instance-methods-4)
+        - [Instance Methods](#instance-methods-1)
     - [UILabel](#uilabel)
-        - [Instance Methods](#instance-methods-5)
+        - [Instance Methods](#instance-methods-2)
 
 - [Foundation](#foundation)
     - [Date](#date)
