@@ -3,11 +3,11 @@
   'case-sensitive': 'false',
   'roots': [{
     'type': 'directory',
-    'name': '/Users/masa/Library/Developer/Xcode/DerivedData/Crea-favrqeejkrqvpqgbgnrzvteuquji/Build/Products/Debug-iphoneos/Crea.framework/Modules'
+    'name': '/Users/masa/Library/Developer/Xcode/DerivedData/Crea-axlsdftfzzcssjhjivyepkoijusd/Build/Products/Debug-iphoneos/Crea.framework/Modules'
     'contents': [{
       'type': 'file',
       'name': 'module.modulemap',
-      'external-contents': '/Users/masa/Desktop/Crea/build/Crea.build/Debug-iphoneos/Crea.build/unextended-module.modulemap',
+      'external-contents': '/Users/masa/Documents/Xcode Project(1軍)/Crea/build/Crea.build/Debug-iphoneos/Crea.build/unextended-module.modulemap',
     }]
   }]
 }

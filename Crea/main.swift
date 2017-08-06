@@ -13,3 +13,9 @@ print(f)
 */
 
 Array<Int>.crea.hogeperofuga()
+
+let view    = UIView(frame: .zero)
+let myLabel = UILabel(frame: .zero)
+
+view.crea.addConstraints(for: myLabel, insets: UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10))
+

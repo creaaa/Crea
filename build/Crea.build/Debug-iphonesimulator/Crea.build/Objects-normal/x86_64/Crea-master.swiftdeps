@@ -1,11 +1,14 @@
 version: "Apple Swift version 3.1 (swiftlang-802.0.53 clang-802.0.42)"
-options: "215c2a113d80cc648d5cb8e281d68fd5"
-build_time: [555277142, 978182000]
+options: "f858b92bcfce02b12d4a66b4db28eb3d"
+build_time: [555370011, 716020000]
 inputs:
-  "/Users/masa/Desktop/Crea/Crea/TypeSafeUtil.swift": !dirty [555228916, 0]
-  "/Users/masa/Desktop/Crea/Crea/main.swift": !dirty [555276476, 0]
-  "/Users/masa/Desktop/Crea/Crea/UINav+UITabBar+UIBBI.swift": !dirty [555227169, 0]
-  "/Users/masa/Desktop/Crea/Crea/Base.swift": !dirty [555277135, 0]
-  "/Users/masa/Desktop/Crea/Crea/UIViewController.swift": !dirty [555224674, 0]
-  "/Users/masa/Desktop/Crea/Crea/Array.swift": !dirty [555277100, 0]
-  "/Users/masa/Desktop/Crea/Crea/Date.swift": !dirty [555223914, 0]
+  "/Users/masa/Documents/Xcode Project(1\u8ECD)/Crea/Crea/UILabel.swift": [555280368, 0]
+  "/Users/masa/Documents/Xcode Project(1\u8ECD)/Crea/Crea/TypeSafeUtil.swift": [555228916, 0]
+  "/Users/masa/Documents/Xcode Project(1\u8ECD)/Crea/Crea/UIView.swift": [555369921, 0]
+  "/Users/masa/Documents/Xcode Project(1\u8ECD)/Crea/Crea/main.swift": [555370003, 0]
+  "/Users/masa/Documents/Xcode Project(1\u8ECD)/Crea/Crea/UINav+UITabBar+UIBBI.swift": [555279429, 0]
+  "/Users/masa/Documents/Xcode Project(1\u8ECD)/Crea/Crea/Base.swift": [555369549, 0]
+  "/Users/masa/Documents/Xcode Project(1\u8ECD)/Crea/Crea/UIViewController.swift": [555224674, 0]
+  "/Users/masa/Documents/Xcode Project(1\u8ECD)/Crea/Crea/Array.swift": [555277264, 0]
+  "/Users/masa/Documents/Xcode Project(1\u8ECD)/Crea/Crea/UIImage.swift": [555280103, 0]
+  "/Users/masa/Documents/Xcode Project(1\u8ECD)/Crea/Crea/Date.swift": [555369507, 0]

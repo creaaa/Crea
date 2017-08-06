@@ -1,5 +1,5 @@
 
-# Crea (ver 0.0.10)
+# Crea (ver 0.0.11)
 
 [![Platform](http://img.shields.io/badge/platform-ios-blue.svg?style=flat)](https://developer.apple.com/iphone/index.action)
 [![Language](http://img.shields.io/badge/language-swift-brightgreen.svg?style=flat)](https://developer.apple.com/swift)
@@ -12,8 +12,8 @@
 Like [RxSwift](https://github.com/ReactiveX/RxSwift "RxSwift") and [KingFisher](https://github.com/onevcat/Kingfisher "KingFisher"), all instance & class method is invoked through a property 'crea'.
 
 ```
-let randomNo = [1,2,3,4,5].*crea*.random
-UIViewController.***crea***.isNetworkAvailable(host_name: "https://www.google.co.jp/")
+let randomNo = [1,2,3,4,5].crea.random
+UIViewController.crea.isNetworkAvailable(host_name: "https://www.google.co.jp/")
 ```
 
 As a result, we can distinguish easily between a function come from this library or not. 
