@@ -1,5 +1,5 @@
 
-# Crea (ver 0.0.13)
+# Crea (ver 0.0.14)
 
 [![Platform](http://img.shields.io/badge/platform-ios-blue.svg?style=flat)](https://developer.apple.com/iphone/index.action)
 [![Language](http://img.shields.io/badge/language-swift-brightgreen.svg?style=flat)](https://developer.apple.com/swift)
@@ -125,7 +125,7 @@ Name | Signature
 
 Name | Signature
 ---- | ---------
-**`kern`**|`kern (kerningValue: CGFloat)`
+**`kern`**|`kern (value: CGFloat)`
 
 # Foundation #
 
@@ -145,6 +145,16 @@ Name | Signatures
 ---- | ----------
 **`date`**|`date (from string: String, format: String = "yyyy-MM-dd") -> Date? `
 **`string`**|`string (date: Date, format: String = "yyyy-MM-dd") -> String `
+
+## Int ##
+
+#### Class Methods ####
+
+Name | Signatures
+---- | ----------
+**`random`**|`random (from: Int, to: Int) -> Int `
+
+
 
 <!--
 #### Operators ####
