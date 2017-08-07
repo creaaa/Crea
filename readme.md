@@ -55,6 +55,8 @@ Hope you like it, stay tuned!
         - [Properties](#properties)
     - [Date](#date)
         - [Class Methods](#class-methods-4)
+    - [Int](#int)
+        - [Class Methods](#class-methods-5)
 
 
 # UIKit #
