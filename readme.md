@@ -6,7 +6,9 @@
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 
 ![logo](https://github.com/creaaa/Crea/blob/master/img/Crea.png)
-
+<div align="center">
+<img src="https://github.com/creaaa/Crea/blob/master/img/Crea.png" width="***サイズ***">
+</div>
 🏃 Own lightweight library that supports my crazy iOS dev life 🏃
 
 ## Characteristics
