@@ -1,5 +1,5 @@
 
-# Crea (ver 0.0.14)
+# Crea (ver 0.0.15)
 
 [![Platform](http://img.shields.io/badge/platform-ios-blue.svg?style=flat)](https://developer.apple.com/iphone/index.action)
 [![Language](http://img.shields.io/badge/language-swift-brightgreen.svg?style=flat)](https://developer.apple.com/swift)
@@ -13,7 +13,7 @@
 
 ## Characteristics
 
-Like [RxSwift](https://github.com/ReactiveX/RxSwift "RxSwift") and [KingFisher](https://github.com/onevcat/Kingfisher "KingFisher"), all instance & class method is invoked through a property 'crea'.
+Like [RxSwift](https://github.com/ReactiveX/RxSwift "RxSwift") and [KingFisher](https://github.com/onevcat/Kingfisher "KingFisher") notation, all instance & class method is invoked through a special property 'crea'.
 
 ```
 let randomNo = [1,2,3,4,5].crea.random
