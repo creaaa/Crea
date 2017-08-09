@@ -14,9 +14,19 @@
 			<key>orderHint</key>
 			<integer>1</integer>
 		</dict>
+		<key>CreaTests.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>445371C11F3947C2007C2D42</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>4459D4CA1F34287B00C4456F</key>
 		<dict>
 			<key>primary</key>

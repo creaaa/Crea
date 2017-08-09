@@ -22,6 +22,8 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		445371C51F3947C2007C2D42 /* CreaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445371C41F3947C2007C2D42 /* CreaTests.swift */; };
+		445371C71F3947C2007C2D42 /* Crea.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4459D4CB1F34287C00C4456F /* Crea.framework */; };
 		4459D4D01F34287C00C4456F /* Crea.h in Headers */ = {isa = PBXBuildFile; fileRef = 4459D4CE1F34287C00C4456F /* Crea.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		445B59E81F3434100049E3D5 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445B59E71F3434100049E3D5 /* UIViewController.swift */; };
 		445B59EA1F34349D0049E3D5 /* UINav+UITabBar+UIBBI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445B59E91F34349D0049E3D5 /* UINav+UITabBar+UIBBI.swift */; };
@@ -29,6 +31,7 @@
 		445B59EE1F343AC30049E3D5 /* TypeSafeUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445B59ED1F343AC30049E3D5 /* TypeSafeUtil.swift */; };
 		4478F4D61F37BFDF00863EF4 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4478F4D51F37BFDF00863EF4 /* UIView.swift */; };
 		4478F4F61F37F92600863EF4 /* Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4478F4F51F37F92600863EF4 /* Int.swift */; };
+		44A2E7911F3ABE9E00E0B640 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A2E7901F3ABE9E00E0B640 /* UIColor.swift */; };
 		44E8A3C11F35704200C69960 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E8A3C01F35704200C69960 /* main.swift */; };
 		44E8A3C51F364C9C00C69960 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E8A3C41F364C9C00C69960 /* Array.swift */; };
 		44E8A3C81F365F4400C69960 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E8A3C71F365F4400C69960 /* UIImage.swift */; };
@@ -37,7 +40,20 @@
 		44F95AA91F344CE700F432B5 /* Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F95AA81F344CE700F432B5 /* Base.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		445371C81F3947C2007C2D42 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4459D4C21F34287B00C4456F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4459D4CA1F34287B00C4456F;
+			remoteInfo = Crea;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		445371C21F3947C2007C2D42 /* CreaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CreaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		445371C41F3947C2007C2D42 /* CreaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreaTests.swift; sourceTree = "<group>"; };
+		445371C61F3947C2007C2D42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4459D4CB1F34287C00C4456F /* Crea.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Crea.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4459D4CE1F34287C00C4456F /* Crea.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Crea.h; sourceTree = "<group>"; };
 		4459D4CF1F34287C00C4456F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +63,7 @@
 		445B59ED1F343AC30049E3D5 /* TypeSafeUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypeSafeUtil.swift; sourceTree = "<group>"; };
 		4478F4D51F37BFDF00863EF4 /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		4478F4F51F37F92600863EF4 /* Int.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Int.swift; sourceTree = "<group>"; };
+		44A2E7901F3ABE9E00E0B640 /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		44E8A3C01F35704200C69960 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		44E8A3C41F364C9C00C69960 /* Array.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
 		44E8A3C71F365F4400C69960 /* UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
@@ -56,6 +73,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		445371BF1F3947C2007C2D42 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				445371C71F3947C2007C2D42 /* Crea.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4459D4C71F34287B00C4456F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -66,10 +91,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		445371C31F3947C2007C2D42 /* CreaTests */ = {
+			isa = PBXGroup;
+			children = (
+				445371C41F3947C2007C2D42 /* CreaTests.swift */,
+				445371C61F3947C2007C2D42 /* Info.plist */,
+			);
+			path = CreaTests;
+			sourceTree = "<group>";
+		};
 		4459D4C11F34287B00C4456F = {
 			isa = PBXGroup;
 			children = (
 				4459D4CD1F34287C00C4456F /* Crea */,
+				445371C31F3947C2007C2D42 /* CreaTests */,
 				4459D4CC1F34287C00C4456F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -78,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				4459D4CB1F34287C00C4456F /* Crea.framework */,
+				445371C21F3947C2007C2D42 /* CreaTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -115,6 +151,7 @@
 				445B59E91F34349D0049E3D5 /* UINav+UITabBar+UIBBI.swift */,
 				44E8A3C71F365F4400C69960 /* UIImage.swift */,
 				44E8A3C91F3661E600C69960 /* UILabel.swift */,
+				44A2E7901F3ABE9E00E0B640 /* UIColor.swift */,
 			);
 			name = UIKit;
 			sourceTree = "<group>";
@@ -133,6 +170,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		445371C11F3947C2007C2D42 /* CreaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 445371CC1F3947C2007C2D42 /* Build configuration list for PBXNativeTarget "CreaTests" */;
+			buildPhases = (
+				445371BE1F3947C2007C2D42 /* Sources */,
+				445371BF1F3947C2007C2D42 /* Frameworks */,
+				445371C01F3947C2007C2D42 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				445371C91F3947C2007C2D42 /* PBXTargetDependency */,
+			);
+			name = CreaTests;
+			productName = CreaTests;
+			productReference = 445371C21F3947C2007C2D42 /* CreaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		4459D4CA1F34287B00C4456F /* Crea */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4459D4D31F34287C00C4456F /* Build configuration list for PBXNativeTarget "Crea" */;
@@ -157,9 +212,14 @@
 		4459D4C21F34287B00C4456F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = masa;
 				TargetAttributes = {
+					445371C11F3947C2007C2D42 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
 					4459D4CA1F34287B00C4456F = {
 						CreatedOnToolsVersion = 8.3.3;
 						LastSwiftMigration = 0830;
@@ -185,11 +245,19 @@
 			targets = (
 				4459D4CA1F34287B00C4456F /* Crea */,
 				4459D4D81F3429C800C4456F /* CreaFatBinary */,
+				445371C11F3947C2007C2D42 /* CreaTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		445371C01F3947C2007C2D42 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4459D4C91F34287B00C4456F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -229,6 +297,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		445371BE1F3947C2007C2D42 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				445371C51F3947C2007C2D42 /* CreaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4459D4C61F34287B00C4456F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -242,6 +318,7 @@
 				44F95AA91F344CE700F432B5 /* Base.swift in Sources */,
 				445B59E81F3434100049E3D5 /* UIViewController.swift in Sources */,
 				44E8A3C51F364C9C00C69960 /* Array.swift in Sources */,
+				44A2E7911F3ABE9E00E0B640 /* UIColor.swift in Sources */,
 				44E8A3C81F365F4400C69960 /* UIImage.swift in Sources */,
 				44F95AA71F3449FB00F432B5 /* readme.md in Sources */,
 				445B59EC1F3437420049E3D5 /* Date.swift in Sources */,
@@ -250,7 +327,37 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		445371C91F3947C2007C2D42 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4459D4CA1F34287B00C4456F /* Crea */;
+			targetProxy = 445371C81F3947C2007C2D42 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		445371CA1F3947C2007C2D42 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = CreaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = co.masa.CreaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		445371CB1F3947C2007C2D42 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = CreaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = co.masa.CreaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 		4459D4D11F34287C00C4456F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -412,6 +519,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		445371CC1F3947C2007C2D42 /* Build configuration list for PBXNativeTarget "CreaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				445371CA1F3947C2007C2D42 /* Debug */,
+				445371CB1F3947C2007C2D42 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4459D4C51F34287B00C4456F /* Build configuration list for PBXProject "Crea" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
