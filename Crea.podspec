@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name        = "Crea"
-  s.version     = "0.0.16"
+  s.version     = "0.0.17"
   s.summary     = "My own framework"
   s.homepage    = "https://github.com/creaaa/Crea"
   s.license     = { :type => "MIT" }
