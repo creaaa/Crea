@@ -30,7 +30,6 @@ As a result, we can distinguish easily between a function come from this library
 ### Cocoapods
 
 ```
-
 # Uncomment the next line to define a global platform for your project
 platform :ios, '10.3'
 
@@ -42,7 +41,6 @@ target '##Target Name##' do
   pod 'Crea'
 
 end
-
 ```
 
 ### Carthage
