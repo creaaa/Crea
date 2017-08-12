@@ -22,6 +22,8 @@ UIViewController.crea.isNetworkAvailable(host_name: "https://www.google.co.jp/")
 
 As a result, we can distinguish easily between a function come from this library or not. 
 
+![result](https://github.com/creaaa/Crea/blob/master/gif/cr.gif)
+
 
 ## Usage
 
