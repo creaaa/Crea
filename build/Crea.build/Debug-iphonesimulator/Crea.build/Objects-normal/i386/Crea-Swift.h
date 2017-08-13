@@ -143,6 +143,11 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @end
 
 
+@interface UIColor (SWIFT_EXTENSION(Crea))
+- (nonnull instancetype)initWithHex:(NSInteger)hex alpha:(double)alpha;
+@end
+
+
 @interface UITableView (SWIFT_EXTENSION(Crea))
 @end
 
