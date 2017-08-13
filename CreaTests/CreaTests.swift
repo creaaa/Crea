@@ -40,8 +40,12 @@ class CreaTests: XCTestCase {
         // let expected = 1
         
         // XCTAssertEqual(actual, expected)
+        // これはいいんだが...
+        // XCTAssertThrowsError(try Int.crea.random(from: 1, to: 0))
+        
         // fatalErrorをアサート成功させるにはどうすればいいんだよこれ...
-        // XCTAssertThrowsError(Int.crea.random(from: 1, to: 0))
+        // (fatalErrorは「クラッシュ」扱い。例外のスローではない...)
+        
         
     }
     
