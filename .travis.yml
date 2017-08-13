@@ -1,5 +1,10 @@
 language: objective-c  # Swiftだけどobjective-cを指定
 osx_image: xcode8.3.3
+
+before_install:
+  - gem install cocoapods -v '1.3.1'
+  - pod install
+
 script:
   # テストを実行(schemeにスキーム名を指定する いってくれ たのむ)
   - xcodebuild test -scheme CreaFatBinary -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 7'
