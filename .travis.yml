@@ -5,3 +5,4 @@ script:
   - xcodebuild test -scheme CreaFatBinary -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 7'
 notifications:
   email: false         # メール通知はOFF
+os: osx
