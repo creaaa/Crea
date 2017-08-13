@@ -6,7 +6,7 @@ before_install:
   - pod install
 
 script:
-  # テストを実行(schemeにスキーム名を指定する いってくれ たのむ)
+  # テストを実行(schemeにスキーム名を指定する)
   - xcodebuild test -scheme CreaFatBinary -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 7'
 notifications:
   email: false         # メール通知はOFF
