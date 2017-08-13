@@ -2,6 +2,6 @@ language: objective-c  # Swiftだけどobjective-cを指定
 osx_image: xcode8.3.3
 script:
   # テストを実行(schemeにスキーム名を指定する いってくれ)
-  - xcodebuild test -scheme CreaTests -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 7'
+  - xcodebuild test -scheme CreaFatBinary -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 7'
 notifications:
   email: false         # メール通知はOFF
