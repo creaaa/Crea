@@ -1,7 +1,9 @@
 
 extension Primordium where Base: UILabel {
     
-    // kerning
+    /**
+     kerns UILabel
+     */
     public func kern(value: CGFloat) {
         self.base.attributedText = NSAttributedString(
             string: self.base.text ?? "",

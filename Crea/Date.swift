@@ -13,23 +13,6 @@ private let formatter: DateFormatter = {
 
 extension Primordium where Base == Date {
     
-    /*
-    public var formatter: DateFormatter {
-        let formatter = DateFormatter()
-        formatter.timeZone = NSTimeZone.system
-        formatter.locale   = Locale(identifier: "en_US_POSIX")
-        formatter.calendar = Calendar(identifier: .gregorian)
-        return formatter
-    }
-    */
-    
-    /*
-    public static func dateFromString(string: String, format: String = "yyyy-MM-dd") -> Date {
-        let formatter = DateFormatter()
-        formatter.dateFormat = format
-        return formatter.date(from: string)!
-    }
-    */
     
     // initすると、型が　Primordium<Date>? となってしまい、これはDate型にキャストできない...
     // targeted extension内で init を定義するのは絶望的に相性悪いと判断し、退避
@@ -48,12 +31,13 @@ extension Primordium where Base == Date {
     */
     
     // initのかわりに、method にしました
+    /**
+     yields Date from String
+     */
     public static func date(from string: String, format: String = "yyyy-MM-dd") -> Date? {
         formatter.dateFormat = format
         return formatter.date(from: string) ?? nil
     }
-    
-    
     
     
     /*
@@ -64,7 +48,10 @@ extension Primordium where Base == Date {
     }
     */
     
-    // Date → String
+
+    /**
+     yields String from Date
+     */
     public static func string(date: Date, format: String = "yyyy-MM-dd") -> String {
         formatter.dateFormat = format
         return formatter.string(from: date)

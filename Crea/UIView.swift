@@ -3,7 +3,9 @@ import UIKit
 
 extension Primordium where Base: UIView {
 
-    // 子Viewを親Viewのサイズいっぱいに表示するための制約を設定する
+    /**
+     add constraints to expand child view to parent view
+    */
     public func addConstraints(for childView: UIView, insets: UIEdgeInsets = .zero) {
         
         childView.translatesAutoresizingMaskIntoConstraints = false

@@ -6,6 +6,9 @@ import SystemConfiguration
 // extension Primordium where Base == UIViewController {
 extension Primordium where Base: UIViewController {
     
+    /**
+        show action sheet | alert.
+    */
     public func showAlert(title:   String,
                           message: String? = nil,
                           style:   UIAlertControllerStyle = .alert)
@@ -17,6 +20,9 @@ extension Primordium where Base: UIViewController {
         }
     }
     
+    /**
+     check network is available.
+     */
     public static func isNetworkAvailable(host_name: String) -> Bool {
         
         // FIXME: throw error rather than return false
@@ -34,7 +40,9 @@ extension Primordium where Base: UIViewController {
         
     }
     
-    
+    /**
+     transit and then invokes callback.
+     */
     public func pushViewController(_ viewController: UIViewController,
                                    animated: Bool,
                                    completion: (() -> Void)? = nil)
@@ -54,8 +62,10 @@ extension Primordium where Base: UIViewController {
             }
         }
     }
-    
-    
+ 
+    /**
+     transit and then invokes callback.
+     */
     public func popViewController(animated: Bool,
                                   completion: (() -> Void)? = nil)
     {

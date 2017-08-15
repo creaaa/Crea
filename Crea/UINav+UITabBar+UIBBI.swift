@@ -10,7 +10,10 @@ extension Primordium where Base: UINavigationController {
      call inside AppDelegate > application_didFinishLaunchingWithOptions
      */
     
-    // nav bar title setting
+    /**
+    nav bar title setting
+    - attention: all inside AppDelegate > application_didFinishLaunchingWithOptions
+     */
     public static func navBarTitle(color: UIColor, fontName: String = "Helvetica", size: CGFloat = 12) {
         UINavigationBar.appearance().titleTextAttributes =
             [NSForegroundColorAttributeName: color,
@@ -18,7 +21,11 @@ extension Primordium where Base: UINavigationController {
         ]
     }
     
-    // nav bar background color
+
+    /**
+     nav bar background color
+     - attention: all inside AppDelegate > application_didFinishLaunchingWithOptions
+     */
     public static func navBarColor(color: UIColor) {
         UINavigationBar.appearance().barTintColor = color
     }
@@ -42,18 +49,29 @@ extension Primordium where Base: UITabBar {
     // you can't tab bar's color here; write each VC
     // self.tabBarController?.tabBar.barTintColor = .black
     
-    // tab bar's icon (when selected)
+    
+    /**
+     tab bar's icon (when selected)
+     - attention: all inside AppDelegate > application_didFinishLaunchingWithOptions
+     */
     public static func tabBarColorSelected(color: UIColor) {
         UITabBar.appearance().tintColor = color
     }
     
-    // tab bar's icon (when unselected)
+    
+    /**
+     tab bar's icon (when unselected)
+     - attention: all inside AppDelegate > application_didFinishLaunchingWithOptions
+     */
     public static func tabBarColorUnselected(color: UIColor) {
         UITabBar.appearance().unselectedItemTintColor = color
     }
     
-    // tab bar's text
-    // ↓の barBtnと干渉しないか？確かめろ
+    
+    /**
+     tab bar's text
+     - attention: all inside AppDelegate > application_didFinishLaunchingWithOptions
+     */
     public static func tabBarItem(color: UIColor, fontName: String = "Helvetica", size: CGFloat = 12) {
     
         UITabBarItem.appearance().setTitleTextAttributes(
@@ -74,7 +92,11 @@ extension Primordium where Base: UITabBar {
 // extension Primordium where Base == UIBarButtonItem {
 extension Primordium where Base: UIBarButtonItem {
     
-    // nav & tab bar's button setting
+    
+    /**
+     nav & tab bar's button setting
+     - attention: all inside AppDelegate > application_didFinishLaunchingWithOptions
+     */
     public static func barBtn(color: UIColor, fontName: String = "Helvetica", size: CGFloat = 12) {
         UIBarButtonItem.appearance().setTitleTextAttributes(
             [ NSFontAttributeName: UIFont(name: fontName, size: size) as Any,

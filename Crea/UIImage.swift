@@ -1,7 +1,10 @@
 
 extension Primordium where Base: UIImage {
 
-    // Resizeするクラスメソッド
+    
+    /**
+     resizes UIimage
+     */
     public func resizeUIImage(width: CGFloat, height: CGFloat) -> UIImage! {
         
         // 指定された画像の大きさのコンテキストを用意
