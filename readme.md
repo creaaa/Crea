@@ -5,6 +5,7 @@
 [![Language](http://img.shields.io/badge/language-swift-brightgreen.svg?style=flat)](https://developer.apple.com/swift)
 [![CocoaPods](https://img.shields.io/cocoapods/v/Crea.svg)](https://github.com/CocoaPods/CocoaPods)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
+[![Build Status](https://travis-ci.org/creaaa/Crea.svg?branch=master)](https://travis-ci.org/creaaa/Crea)
 
 <div align="center">
 <img src="https://github.com/creaaa/Crea/blob/master/img/Crea.png" width="***サイズ***">
