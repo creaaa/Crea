@@ -1,6 +1,9 @@
 language: objective-c
 osx_image: xcode8.3
-
-script: ##
-  - xcodebuild -scheme CreaTests -sdk iphonesimulator -destination 'platform=iOS Simulator,OS=10.3,name=iPhone 7' -configuration Debug test | xcpretty -c
+script:
+- xcodebuild -scheme CreaTests -sdk iphonesimulator -destination 'platform=iOS Simulator,OS=10.3,name=iPhone
+  7' -configuration Debug test | xcpretty -c
 xcode_sdk: iphonesimulator
+notifications:
+  slack:
+    secure: JvuAUp/IbK2ksjM9ckZCetYxPOCa9ylWuQZ71fXFloWtlSIF5B+4CqQ48VxI0qihI4sbGAq3zpWhs4YWVfuo/rlx3q5dYKtecnR16Odm+h6/dM09K/++X/zX5WBI2+O2wwGauofZAEJJRS5xB/0QuteAieEy6Xttnmz0Y67RG74/SY3W6KpAToN7ZA33W/A96f3hIb0mDKG82a5IUvUk5DaoM3pyZbue7d3tWCpcXcnZ6f9RCPY/wIcT4b5jAbTYXk+5R99VJhvlnXEbDSmXIiA5VgQjNyVYPg7EjVlLNnMz3muAhe+cLFz5YDBKNEyWWv1k2PVndxPNpjPkwkeMXSGXuMAFLcM81qMZP68/967punEoN6qBKTPJc34UaEyd6VjDwU/kSruxQFwJywUnhkH3XjC0p2kJpLZFn28iuDLEP3UjKBKnM/Apw79hBeTk2yeuNGFwPamJkFNMJe++0px16x2/yNnDHdQdtAEjxsicPXqZc+EEjZ8p1e66TOaQ+l5zR7rVplHoWBaNXOzo145Wgmqgb7q2SbynbxeyD6AyKn+Fwnl7u4z5docyeEMckoKF8dGZ6OZC9m5ypUdsZrgv+SYBvXaoN3cCV8v9n/Tu+AbfMAvQI6uIIN0KbbKd7N0mPRasv1rF0s5MlxVNOb0ZmLy8tnTvv5FZJl2IviA=
