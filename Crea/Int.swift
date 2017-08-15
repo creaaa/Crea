@@ -9,8 +9,11 @@ extension Int: CreaCompatible {}
 
 extension Primordium where Base == Int {
     
-    /*
-     // be careful! less than 0 of (to - from + 1) causes runtime crash!
+    // MARK: Methods
+    
+    /**
+     returns Int randomly
+     - attention: If (to - from + 1) is less than 0, it causes runtime crash😱
      */
     public static func random(from: Int, to: Int) -> Int {
         if from > to {

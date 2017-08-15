@@ -1,6 +1,7 @@
 
 extension Primordium where Base: UIImage {
 
+    // MARK: Methods
     
     /**
      resizes UIimage

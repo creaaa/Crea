@@ -14,14 +14,15 @@ extension Array: CreaCompatible {
 
 extension PrimordiumWithAssociatedType where Base == Array<AssociatedType> {
     
+    // MARK: Properties
+    
+    /**
+        returns array's element randomly
+     */
     public var random: AssociatedType? {
         guard !self.base.isEmpty else { return nil }
         let index = Int(arc4random_uniform(UInt32(self.base.count)))
         return self.base[index]
-    }
-    
-    public static func hogeperofuga() {
-        print("hogeperofuga!!")
     }
     
 }

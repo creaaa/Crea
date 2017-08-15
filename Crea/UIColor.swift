@@ -1,6 +1,8 @@
 
 extension UIColor {
     
+    // MARK: Methods
+    
     /**
      initializes UIColor from color code
      */

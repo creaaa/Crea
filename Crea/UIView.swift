@@ -3,6 +3,8 @@ import UIKit
 
 extension Primordium where Base: UIView {
 
+    // MARK: Methods
+    
     /**
      add constraints to expand child view to parent view
     */

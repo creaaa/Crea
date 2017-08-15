@@ -6,6 +6,8 @@ import SystemConfiguration
 // extension Primordium where Base == UIViewController {
 extension Primordium where Base: UIViewController {
     
+    // MARK: Methods
+    
     /**
         show action sheet | alert.
     */

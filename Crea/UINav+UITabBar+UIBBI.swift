@@ -10,6 +10,8 @@ extension Primordium where Base: UINavigationController {
      call inside AppDelegate > application_didFinishLaunchingWithOptions
      */
     
+    // MARK: Methods
+    
     /**
     nav bar title setting
     - attention: all inside AppDelegate > application_didFinishLaunchingWithOptions
@@ -49,6 +51,7 @@ extension Primordium where Base: UITabBar {
     // you can't tab bar's color here; write each VC
     // self.tabBarController?.tabBar.barTintColor = .black
     
+    // MARK: Methods
     
     /**
      tab bar's icon (when selected)
@@ -92,6 +95,7 @@ extension Primordium where Base: UITabBar {
 // extension Primordium where Base == UIBarButtonItem {
 extension Primordium where Base: UIBarButtonItem {
     
+    // MARK: Methods
     
     /**
      nav & tab bar's button setting

@@ -30,6 +30,8 @@ extension Primordium where Base == Date {
     }
     */
     
+    // MARK: Methods
+    
     // initのかわりに、method にしました
     /**
      yields Date from String

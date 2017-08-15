@@ -1,6 +1,8 @@
 
 extension Primordium where Base: UILabel {
     
+    // MARK: Methods
+    
     /**
      kerns UILabel
      */
