@@ -26,7 +26,7 @@ As a result, we can distinguish easily between a function come from this library
 
 ![result](https://github.com/creaaa/Crea/blob/master/gif/cr.gif)
 
-(※ Animation: [chriseidhof/boom.swift](https://gist.github.com/chriseidhof/1475ee26ec46f79bee56))
+animation: <a href="https://gist.github.com/chriseidhof/1475ee26ec46f79bee56" target="_blank">chriseidhof/boom.swift</a>
 
 ## Usage
 
