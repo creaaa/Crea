@@ -52,7 +52,7 @@ end
 github "creaaa/Crea"
 ```
 
-That's it!
+That's it!<br>
 Hope you like it, stay tuned!
 
 
