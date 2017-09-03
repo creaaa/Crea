@@ -8,7 +8,7 @@
 [![Build Status](https://travis-ci.org/creaaa/Crea.svg?branch=master)](https://travis-ci.org/creaaa/Crea)
 
 <div align="center">
-<img src="https://github.com/creaaa/Crea/blob/master/img/Crea.png" width="***サイズ***">
+<img src="https://github.com/creaaa/Crea/blob/master/img/Crea.png">
 </div>
 <br>
 🏃 Own delightful library that supports my iOS dev 🏃
